@@ -32,6 +32,7 @@
 
         <table id="test" class="table table-hover ">
             <tr>
+                <th>Index</th>
                 <th>ID</th>
                 <th>Display Name</th>
             </tr>
@@ -63,6 +64,7 @@
                 var i = 0;
                 $.each(response.availableField, function () {
                     $("#test").append("<tr>" +
+                        "<td>" + [i + 1] + "</td>" +
                         "<td>" + response.availableField[i].ID + "</td>" +
                         "<td>" + response.availableField[i].displayName + "</td>" +
                         "</tr>");
